@@ -8,7 +8,7 @@ creds = pd.read_csv('API_Key.csv').set_index('key').transpose()
 # Header for GET Request
 HEADERS = {"X-API-Key" : creds.bungie_api[0]}
 
-# Input Clan ID
+# Input Clan ID and fulfill GET request
 print("Insert clanID")
 bungie_api = "https://www.bungie.net/Platform"
 call = "/GroupV2/" + input() + "/Members/"
